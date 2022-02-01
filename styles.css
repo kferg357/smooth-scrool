@@ -201,7 +201,7 @@
 
 .hero {
   background: black;
-  background: linear-gradient(to right, #0000);
+  background: linear-gradient(to right, #161616, #0000);
   padding: 200px 0;
 }
 
@@ -405,7 +405,7 @@
   background-image: linear-gradient(to right, #00dbde, #fc00ff 100% );
 }
 
-.fa-layer-group, fa-users {
+.fa-layer-group, .fa-users {
   font-size: 14rem;
 }
 
@@ -453,7 +453,7 @@
 
   .main__content h1 {
     font-size: 2.5rem;
-    margin-top: 2.rem;
+    margin-top: 2rem;
   }
 
   .main__content h2 {
@@ -509,7 +509,7 @@
 
 .services h1 {
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #f7673c 100%);
+  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -552,6 +552,89 @@ background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, F
 
 }
   
+.services__card h2 {
+  text-align: center;
+}
+
+.services__card p{
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+.services__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.services__card button {
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+
+.services__card button:hover {
+  cursor: pointer;
+}
+
+.services__card:hover{
+  transform: scale(1.075);
+  transition: 00.3s ease-in;
+  cursor: pointer;
+}
  
+@media screen and (max-width: 1300px) {
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
+  }
+} 
 
+/* Footer CSS */
+.footer_container {
+  background-color: black;
+  padding: 5rem 0;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer__logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer__links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link--wrapper {
+  display: flex;
+}
+
+.footer__links--items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
